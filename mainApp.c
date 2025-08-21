@@ -10,6 +10,7 @@
 #include <avr/io.h>
 
 #include "led.h"
+#include "Keypad.h"
 
 #define F_CPU 16000000UL
 #include <util/delay.h>
@@ -19,7 +20,15 @@
  */
 int main() {
     init_LEDS();
-    led_on(LED1);
+    keypad_init();
+    
+    char key;
+    
+    while(1){
+        
+    }
+    //buttons_init();
+    /*led_on(LED1);
     _delay_ms(500);
     led_off(LED1);
     _delay_ms(500);
@@ -28,13 +37,25 @@ int main() {
     led_on_all();
     _delay_ms(500);
     led_off_all();
-    _delay_ms(500);
+    _delay_ms(500);*/
+    /*char prevState = 0;
     while (1) {
-        led_toggle_all();
-        _delay_ms(500);
-        
-    }
-    
+        char currentState = isPressed();
+
+        // Detect rising edge (button just pressed)
+        if (currentState && !prevState) {
+            led_toggle_all();
+            _delay_ms(500); // debounce delay
+        }
+
+        prevState = currentState; // update state
+    }*/
+
+
+
+
+
+
     return (EXIT_SUCCESS); //ctrl to go to file
 }
 
