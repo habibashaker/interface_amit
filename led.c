@@ -6,6 +6,7 @@ void init_LEDS(){
     setPINC_dir(LED2,OUT);
     setPINC_dir(LED3,OUT);
     setPIND_dir(LED4,OUT);
+    //setPORTB_dir(OUT);
 }
 
 void led_on(char ledNum){
@@ -81,3 +82,4 @@ void led_toggle_all(){
     led_toggle(LED3);
     led_toggle(LED4); 
 }
+

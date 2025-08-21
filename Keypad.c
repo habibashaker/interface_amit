@@ -1,7 +1,8 @@
 #include "DIO.h"
 #include "Keypad.h"
+#include <util/delay.h>
 
-extern char keys[4][3]=
+char keys[4][3]=
 {
     {'1','2','3'},
     {'4','5','6'},

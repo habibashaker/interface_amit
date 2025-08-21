@@ -25,7 +25,41 @@ int main() {
     char key;
     
     while(1){
-        
+        key = keypad_read();
+        switch(key){
+            case '1':
+                led_on(LED1);
+                _delay_ms(200);
+                led_off(LED1);
+                break;
+            case '2':
+                led_on(LED1);
+                led_on(LED2);
+                _delay_ms(200);
+                led_off(LED1);
+                led_off(LED2);
+                break;
+            case '3':
+                led_on(LED1);
+                led_on(LED2);
+                led_on(LED3);
+                _delay_ms(200);
+                led_off(LED1);
+                led_off(LED2);
+                led_off(LED3);
+                break;
+            case '4':
+                led_on(LED1);
+                led_on(LED2);
+                led_on(LED3);
+                led_on(LED4);
+                _delay_ms(200);
+                led_off(LED1);
+                led_off(LED2);
+                led_off(LED3);
+                led_off(LED4);
+                break;
+        }
     }
     //buttons_init();
     /*led_on(LED1);
