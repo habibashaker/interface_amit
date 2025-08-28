@@ -1,5 +1,5 @@
-build/default/production/mainApp.o.d build/default/production/mainApp.o: \
- mainApp.c c:\program\ files\microchip\xc8\v2.32\avr\avr\include\stdio.h \
+build/default/production/sevenSeg.o.d build/default/production/sevenSeg.o: \
+ sevenSeg.c c:\program\ files\microchip\xc8\v2.32\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\inttypes.h \
  c:\program\ files\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\stdint.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\stdint.h \
@@ -16,8 +16,8 @@ build/default/production/mainApp.o.d build/default/production/mainApp.o: \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\util\delay_basic.h \
- c:\program\ files\microchip\xc8\v2.32\avr\avr\include\math.h led.h \
- Keypad.h sevenSeg.h
+ c:\program\ files\microchip\xc8\v2.32\avr\avr\include\math.h DIO.h \
+ sevenSeg.h
 
 c:\program\ files\microchip\xc8\v2.32\avr\avr\include\stdio.h:
 
@@ -55,8 +55,6 @@ c:\program\ files\microchip\xc8\v2.32\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.32\avr\avr\include\math.h:
 
-led.h:
-
-Keypad.h:
+DIO.h:
 
 sevenSeg.h:

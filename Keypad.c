@@ -1,6 +1,7 @@
 #include "DIO.h"
 #include "Keypad.h"
 #include <util/delay.h>
+#define F_CPU 16000000UL
 
 char keys[4][3]=
 {

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mainApp.c DIO.c led.c buttons.c Keypad.c
+SOURCEFILES_QUOTED_IF_SPACED=mainApp.c DIO.c led.c buttons.c Keypad.c sevenSeg.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mainApp.o ${OBJECTDIR}/DIO.o ${OBJECTDIR}/led.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/Keypad.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/mainApp.o.d ${OBJECTDIR}/DIO.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/buttons.o.d ${OBJECTDIR}/Keypad.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mainApp.o ${OBJECTDIR}/DIO.o ${OBJECTDIR}/led.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/Keypad.o ${OBJECTDIR}/sevenSeg.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/mainApp.o.d ${OBJECTDIR}/DIO.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/buttons.o.d ${OBJECTDIR}/Keypad.o.d ${OBJECTDIR}/sevenSeg.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mainApp.o ${OBJECTDIR}/DIO.o ${OBJECTDIR}/led.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/Keypad.o
+OBJECTFILES=${OBJECTDIR}/mainApp.o ${OBJECTDIR}/DIO.o ${OBJECTDIR}/led.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/Keypad.o ${OBJECTDIR}/sevenSeg.o
 
 # Source Files
-SOURCEFILES=mainApp.c DIO.c led.c buttons.c Keypad.c
+SOURCEFILES=mainApp.c DIO.c led.c buttons.c Keypad.c sevenSeg.c
 
 
 
@@ -124,6 +124,12 @@ ${OBJECTDIR}/Keypad.o: Keypad.c  .generated_files/flags/default/10f7e5dc34358f03
 	@${RM} ${OBJECTDIR}/Keypad.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3     -MD -MP -MF "${OBJECTDIR}/Keypad.o.d" -MT "${OBJECTDIR}/Keypad.o.d" -MT ${OBJECTDIR}/Keypad.o -o ${OBJECTDIR}/Keypad.o Keypad.c 
 	
+${OBJECTDIR}/sevenSeg.o: sevenSeg.c  .generated_files/flags/default/e9f95d872f092c58d9f6e4981100aec4d12eba5 .generated_files/flags/default/2f9e58fd8ce1a2611b0e0fd33168db129b9285f3
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/sevenSeg.o.d 
+	@${RM} ${OBJECTDIR}/sevenSeg.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3     -MD -MP -MF "${OBJECTDIR}/sevenSeg.o.d" -MT "${OBJECTDIR}/sevenSeg.o.d" -MT ${OBJECTDIR}/sevenSeg.o -o ${OBJECTDIR}/sevenSeg.o sevenSeg.c 
+	
 else
 ${OBJECTDIR}/mainApp.o: mainApp.c  .generated_files/flags/default/cd3b5221ebabcc143dc293f4137128be2bc248a9 .generated_files/flags/default/2f9e58fd8ce1a2611b0e0fd33168db129b9285f3
 	@${MKDIR} "${OBJECTDIR}" 
@@ -154,6 +160,12 @@ ${OBJECTDIR}/Keypad.o: Keypad.c  .generated_files/flags/default/794c667d349ff651
 	@${RM} ${OBJECTDIR}/Keypad.o.d 
 	@${RM} ${OBJECTDIR}/Keypad.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3     -MD -MP -MF "${OBJECTDIR}/Keypad.o.d" -MT "${OBJECTDIR}/Keypad.o.d" -MT ${OBJECTDIR}/Keypad.o -o ${OBJECTDIR}/Keypad.o Keypad.c 
+	
+${OBJECTDIR}/sevenSeg.o: sevenSeg.c  .generated_files/flags/default/c82d599db299d76379c20b05af02142c33c6f889 .generated_files/flags/default/2f9e58fd8ce1a2611b0e0fd33168db129b9285f3
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/sevenSeg.o.d 
+	@${RM} ${OBJECTDIR}/sevenSeg.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3     -MD -MP -MF "${OBJECTDIR}/sevenSeg.o.d" -MT "${OBJECTDIR}/sevenSeg.o.d" -MT ${OBJECTDIR}/sevenSeg.o -o ${OBJECTDIR}/sevenSeg.o sevenSeg.c 
 	
 endif
 

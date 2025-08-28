@@ -39,14 +39,15 @@ void setPINA(char pinNum, char state) {
 }
 
 void setPORTA(char state) {
-    switch (state) {
+    /*switch (state) {
         case HIGH:
             PORTA = 0xFF;
             break;
         case LOW:
             PORTA = 0x00;
             break;
-    }
+    }*/
+    PORTA = state;
 }
 
 void togglePINA(char pinNum) {

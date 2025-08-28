@@ -15,18 +15,22 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/DIO.o
  .data          0x0000000000000000        0x0 build/default/production/DIO.o
  .bss           0x0000000000000000        0x0 build/default/production/DIO.o
- .text.setPORTA_dir
-                0x0000000000000000       0x12 build/default/production/DIO.o
- .text.setPORTA
-                0x0000000000000000       0x12 build/default/production/DIO.o
+ .text.setPINA_dir
+                0x0000000000000000       0x40 build/default/production/DIO.o
+ .text.setPINA  0x0000000000000000       0x3e build/default/production/DIO.o
  .text.togglePINA
                 0x0000000000000000       0x16 build/default/production/DIO.o
  .text.togglePORTA
                 0x0000000000000000        0x8 build/default/production/DIO.o
  .text.checkPINA
                 0x0000000000000000       0x16 build/default/production/DIO.o
+ .text.checkPORTA
+                0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.setPINB_dir
+                0x0000000000000000       0x40 build/default/production/DIO.o
  .text.setPORTB_dir
                 0x0000000000000000       0x12 build/default/production/DIO.o
+ .text.setPINB  0x0000000000000000       0x3e build/default/production/DIO.o
  .text.setPORTB
                 0x0000000000000000       0x12 build/default/production/DIO.o
  .text.togglePINB
@@ -37,8 +41,11 @@ Discarded input sections
                 0x0000000000000000       0x16 build/default/production/DIO.o
  .text.checkPORTB
                 0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.setPINC_dir
+                0x0000000000000000       0x40 build/default/production/DIO.o
  .text.setPORTC_dir
                 0x0000000000000000       0x12 build/default/production/DIO.o
+ .text.setPINC  0x0000000000000000       0x3e build/default/production/DIO.o
  .text.setPORTC
                 0x0000000000000000       0x12 build/default/production/DIO.o
  .text.togglePINC
@@ -49,8 +56,11 @@ Discarded input sections
                 0x0000000000000000       0x16 build/default/production/DIO.o
  .text.checkPORTC
                 0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.setPIND_dir
+                0x0000000000000000       0x40 build/default/production/DIO.o
  .text.setPORTD_dir
                 0x0000000000000000       0x12 build/default/production/DIO.o
+ .text.setPIND  0x0000000000000000       0x3e build/default/production/DIO.o
  .text.setPORTD
                 0x0000000000000000       0x12 build/default/production/DIO.o
  .text.togglePIND
@@ -64,6 +74,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/led.o
  .data          0x0000000000000000        0x0 build/default/production/led.o
  .bss           0x0000000000000000        0x0 build/default/production/led.o
+ .text.init_LEDS
+                0x0000000000000000       0x22 build/default/production/led.o
+ .text.led_on   0x0000000000000000       0x3e build/default/production/led.o
+ .text.led_off  0x0000000000000000       0x3e build/default/production/led.o
  .text.led_toggle
                 0x0000000000000000       0x36 build/default/production/led.o
  .text.led_on_all
@@ -72,6 +86,16 @@ Discarded input sections
                 0x0000000000000000       0x1a build/default/production/led.o
  .text.led_toggle_all
                 0x0000000000000000       0x1a build/default/production/led.o
+ .debug_info    0x0000000000000000      0x5ce build/default/production/led.o
+ .debug_abbrev  0x0000000000000000      0x105 build/default/production/led.o
+ .debug_loc     0x0000000000000000      0x194 build/default/production/led.o
+ .debug_aranges
+                0x0000000000000000       0x50 build/default/production/led.o
+ .debug_ranges  0x0000000000000000       0x40 build/default/production/led.o
+ .debug_line    0x0000000000000000      0x18d build/default/production/led.o
+ .debug_str     0x0000000000000000       0x4c build/default/production/led.o
+ .comment       0x0000000000000000       0x30 build/default/production/led.o
+ .debug_frame   0x0000000000000000       0x84 build/default/production/led.o
  .text          0x0000000000000000        0x0 build/default/production/buttons.o
  .data          0x0000000000000000        0x0 build/default/production/buttons.o
  .bss           0x0000000000000000        0x0 build/default/production/buttons.o
@@ -91,6 +115,24 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/production/Keypad.o
  .data          0x0000000000000000        0x0 build/default/production/Keypad.o
  .bss           0x0000000000000000        0x0 build/default/production/Keypad.o
+ .text.keypad_init
+                0x0000000000000000       0x72 build/default/production/Keypad.o
+ .text.keypad_read
+                0x0000000000000000       0x88 build/default/production/Keypad.o
+ .data.keys     0x0000000000000000        0xc build/default/production/Keypad.o
+ .debug_info    0x0000000000000000      0x542 build/default/production/Keypad.o
+ .debug_abbrev  0x0000000000000000      0x158 build/default/production/Keypad.o
+ .debug_loc     0x0000000000000000       0xbb build/default/production/Keypad.o
+ .debug_aranges
+                0x0000000000000000       0x28 build/default/production/Keypad.o
+ .debug_ranges  0x0000000000000000       0x18 build/default/production/Keypad.o
+ .debug_line    0x0000000000000000      0x183 build/default/production/Keypad.o
+ .debug_str     0x0000000000000000       0x17 build/default/production/Keypad.o
+ .comment       0x0000000000000000       0x30 build/default/production/Keypad.o
+ .debug_frame   0x0000000000000000       0x50 build/default/production/Keypad.o
+ .text          0x0000000000000000        0x0 build/default/production/sevenSeg.o
+ .data          0x0000000000000000        0x0 build/default/production/sevenSeg.o
+ .bss           0x0000000000000000        0x0 build/default/production/sevenSeg.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.32/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.32/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.32/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
@@ -147,6 +189,7 @@ LOAD build/default/production/DIO.o
 LOAD build/default/production/led.o
 LOAD build/default/production/buttons.o
 LOAD build/default/production/Keypad.o
+LOAD build/default/production/sevenSeg.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.32/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
 END GROUP
@@ -404,8 +447,7 @@ END GROUP
  .comment       0x0000000000000000       0x2f build/default/production/mainApp.o
                                          0x30 (size before relaxing)
  .comment       0x000000000000002f       0x30 build/default/production/DIO.o
- .comment       0x000000000000002f       0x30 build/default/production/led.o
- .comment       0x000000000000002f       0x30 build/default/production/Keypad.o
+ .comment       0x000000000000002f       0x30 build/default/production/sevenSeg.o
 
 .stack.descriptors.hdr
                 0x0000000000000000        0xe
@@ -427,65 +469,57 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x1b0
+.debug_aranges  0x0000000000000000      0x160
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 build/default/production/mainApp.o
  .debug_aranges
                 0x0000000000000020      0x118 build/default/production/DIO.o
  .debug_aranges
-                0x0000000000000138       0x50 build/default/production/led.o
- .debug_aranges
-                0x0000000000000188       0x28 build/default/production/Keypad.o
+                0x0000000000000138       0x28 build/default/production/sevenSeg.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x1d6a
+.debug_info     0x0000000000000000     0x12d7
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x4e6 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
- .debug_info    0x00000000000004e6      0x587 build/default/production/mainApp.o
- .debug_info    0x0000000000000a6d      0x7ed build/default/production/DIO.o
- .debug_info    0x000000000000125a      0x5ce build/default/production/led.o
- .debug_info    0x0000000000001828      0x542 build/default/production/Keypad.o
+ .debug_info    0x00000000000004e6      0x339 build/default/production/mainApp.o
+ .debug_info    0x000000000000081f      0x7eb build/default/production/DIO.o
+ .debug_info    0x000000000000100a      0x2cd build/default/production/sevenSeg.o
 
-.debug_abbrev   0x0000000000000000      0x947
+.debug_abbrev   0x0000000000000000      0x78f
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x4a3 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
- .debug_abbrev  0x00000000000004a3      0x115 build/default/production/mainApp.o
- .debug_abbrev  0x00000000000005b8      0x132 build/default/production/DIO.o
- .debug_abbrev  0x00000000000006ea      0x105 build/default/production/led.o
- .debug_abbrev  0x00000000000007ef      0x158 build/default/production/Keypad.o
+ .debug_abbrev  0x00000000000004a3      0x101 build/default/production/mainApp.o
+ .debug_abbrev  0x00000000000005a4      0x132 build/default/production/DIO.o
+ .debug_abbrev  0x00000000000006d6       0xb9 build/default/production/sevenSeg.o
 
-.debug_line     0x0000000000000000      0xa5e
+.debug_line     0x0000000000000000      0x6ea
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x119 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
- .debug_line    0x0000000000000119      0x1aa build/default/production/mainApp.o
- .debug_line    0x00000000000002c3      0x48b build/default/production/DIO.o
- .debug_line    0x000000000000074e      0x18d build/default/production/led.o
- .debug_line    0x00000000000008db      0x183 build/default/production/Keypad.o
+ .debug_line    0x0000000000000119       0xfb build/default/production/mainApp.o
+ .debug_line    0x0000000000000214      0x479 build/default/production/DIO.o
+ .debug_line    0x000000000000068d       0x5d build/default/production/sevenSeg.o
 
-.debug_frame    0x0000000000000000      0x30c
+.debug_frame    0x0000000000000000      0x26c
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x24 build/default/production/mainApp.o
  .debug_frame   0x0000000000000024      0x214 build/default/production/DIO.o
- .debug_frame   0x0000000000000238       0x84 build/default/production/led.o
- .debug_frame   0x00000000000002bc       0x50 build/default/production/Keypad.o
+ .debug_frame   0x0000000000000238       0x34 build/default/production/sevenSeg.o
 
-.debug_str      0x0000000000000000      0x237
+.debug_str      0x0000000000000000      0x1de
  *(.debug_str)
  .debug_str     0x0000000000000000      0x196 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
- .debug_str     0x0000000000000196       0x22 build/default/production/mainApp.o
- .debug_str     0x00000000000001b8       0x1c build/default/production/DIO.o
- .debug_str     0x00000000000001d4       0x4c build/default/production/led.o
- .debug_str     0x0000000000000220       0x17 build/default/production/Keypad.o
+ .debug_str     0x0000000000000196       0x16 build/default/production/mainApp.o
+ .debug_str     0x00000000000001ac       0x1c build/default/production/DIO.o
+ .debug_str     0x00000000000001c8       0x16 build/default/production/sevenSeg.o
 
-.debug_loc      0x0000000000000000      0x927
+.debug_loc      0x0000000000000000      0x5d5
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x154 build/default/production/mainApp.o
- .debug_loc     0x0000000000000154      0x584 build/default/production/DIO.o
- .debug_loc     0x00000000000006d8      0x194 build/default/production/led.o
- .debug_loc     0x000000000000086c       0xbb build/default/production/Keypad.o
+ .debug_loc     0x0000000000000000       0x5c build/default/production/mainApp.o
+ .debug_loc     0x000000000000005c      0x558 build/default/production/DIO.o
+ .debug_loc     0x00000000000005b4       0x21 build/default/production/sevenSeg.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -505,12 +539,11 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x170
+.debug_ranges   0x0000000000000000      0x130
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x10 build/default/production/mainApp.o
  .debug_ranges  0x0000000000000010      0x108 build/default/production/DIO.o
- .debug_ranges  0x0000000000000118       0x40 build/default/production/led.o
- .debug_ranges  0x0000000000000158       0x18 build/default/production/Keypad.o
+ .debug_ranges  0x0000000000000118       0x18 build/default/production/sevenSeg.o
 
 .debug_macro
  *(.debug_macro)
@@ -523,106 +556,57 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
 
-.text.main      0x00000000000000b0       0xec
- .text.main     0x00000000000000b0       0xec build/default/production/mainApp.o
+.text.main      0x00000000000000b0       0x26
+ .text.main     0x00000000000000b0       0x26 build/default/production/mainApp.o
                 0x00000000000000b0                main
 
-.text.keypad_read
-                0x000000000000019c       0x88
- .text.keypad_read
-                0x000000000000019c       0x88 build/default/production/Keypad.o
-                0x000000000000019c                keypad_read
+.text.setPORTA_dir
+                0x00000000000000d6       0x12
+ .text.setPORTA_dir
+                0x00000000000000d6       0x12 build/default/production/DIO.o
+                0x00000000000000d6                setPORTA_dir
 
-.text.keypad_init
-                0x0000000000000224       0x72
- .text.keypad_init
-                0x0000000000000224       0x72 build/default/production/Keypad.o
-                0x0000000000000224                keypad_init
+.text._7seg_write
+                0x00000000000000e8       0x10
+ .text._7seg_write
+                0x00000000000000e8       0x10 build/default/production/sevenSeg.o
+                0x00000000000000e8                _7seg_write
 
-.text.setPINA_dir
-                0x0000000000000296       0x40
- .text.setPINA_dir
-                0x0000000000000296       0x40 build/default/production/DIO.o
-                0x0000000000000296                setPINA_dir
+.text.init_7Seg
+                0x00000000000000f8        0x8
+ .text.init_7Seg
+                0x00000000000000f8        0x8 build/default/production/sevenSeg.o
+                0x00000000000000f8                init_7Seg
 
-.text.setPINB_dir
-                0x00000000000002d6       0x40
- .text.setPINB_dir
-                0x00000000000002d6       0x40 build/default/production/DIO.o
-                0x00000000000002d6                setPINB_dir
+.text           0x0000000000000100        0x4
+ .text          0x0000000000000100        0x4 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
+                0x0000000000000100                __vector_1
+                0x0000000000000100                __vector_12
+                0x0000000000000100                __bad_interrupt
+                0x0000000000000100                __vector_6
+                0x0000000000000100                __vector_3
+                0x0000000000000100                __vector_11
+                0x0000000000000100                __vector_13
+                0x0000000000000100                __vector_17
+                0x0000000000000100                __vector_19
+                0x0000000000000100                __vector_7
+                0x0000000000000100                __vector_5
+                0x0000000000000100                __vector_4
+                0x0000000000000100                __vector_9
+                0x0000000000000100                __vector_2
+                0x0000000000000100                __vector_15
+                0x0000000000000100                __vector_8
+                0x0000000000000100                __vector_14
+                0x0000000000000100                __vector_10
+                0x0000000000000100                __vector_16
+                0x0000000000000100                __vector_18
+                0x0000000000000100                __vector_20
 
-.text.setPINC_dir
-                0x0000000000000316       0x40
- .text.setPINC_dir
-                0x0000000000000316       0x40 build/default/production/DIO.o
-                0x0000000000000316                setPINC_dir
+.text.setPORTA  0x0000000000000104        0x4
+ .text.setPORTA
+                0x0000000000000104        0x4 build/default/production/DIO.o
+                0x0000000000000104                setPORTA
 
-.text.setPIND_dir
-                0x0000000000000356       0x40
- .text.setPIND_dir
-                0x0000000000000356       0x40 build/default/production/DIO.o
-                0x0000000000000356                setPIND_dir
-
-.text.setPINA   0x0000000000000396       0x3e
- .text.setPINA  0x0000000000000396       0x3e build/default/production/DIO.o
-                0x0000000000000396                setPINA
-
-.text.setPINB   0x00000000000003d4       0x3e
- .text.setPINB  0x00000000000003d4       0x3e build/default/production/DIO.o
-                0x00000000000003d4                setPINB
-
-.text.setPINC   0x0000000000000412       0x3e
- .text.setPINC  0x0000000000000412       0x3e build/default/production/DIO.o
-                0x0000000000000412                setPINC
-
-.text.setPIND   0x0000000000000450       0x3e
- .text.setPIND  0x0000000000000450       0x3e build/default/production/DIO.o
-                0x0000000000000450                setPIND
-
-.text.led_on    0x000000000000048e       0x3e
- .text.led_on   0x000000000000048e       0x3e build/default/production/led.o
-                0x000000000000048e                led_on
-
-.text.led_off   0x00000000000004cc       0x3e
- .text.led_off  0x00000000000004cc       0x3e build/default/production/led.o
-                0x00000000000004cc                led_off
-
-.text.init_LEDS
-                0x000000000000050a       0x22
- .text.init_LEDS
-                0x000000000000050a       0x22 build/default/production/led.o
-                0x000000000000050a                init_LEDS
-
-.text           0x000000000000052c        0x4
- .text          0x000000000000052c        0x4 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/ATmega_DFP/2.3.126/xc8/avr/lib/avr5/memx-const/crtatmega32a.o
-                0x000000000000052c                __vector_1
-                0x000000000000052c                __vector_12
-                0x000000000000052c                __bad_interrupt
-                0x000000000000052c                __vector_6
-                0x000000000000052c                __vector_3
-                0x000000000000052c                __vector_11
-                0x000000000000052c                __vector_13
-                0x000000000000052c                __vector_17
-                0x000000000000052c                __vector_19
-                0x000000000000052c                __vector_7
-                0x000000000000052c                __vector_5
-                0x000000000000052c                __vector_4
-                0x000000000000052c                __vector_9
-                0x000000000000052c                __vector_2
-                0x000000000000052c                __vector_15
-                0x000000000000052c                __vector_8
-                0x000000000000052c                __vector_14
-                0x000000000000052c                __vector_10
-                0x000000000000052c                __vector_16
-                0x000000000000052c                __vector_18
-                0x000000000000052c                __vector_20
-
-.text.checkPORTA
-                0x0000000000000530        0x4
- .text.checkPORTA
-                0x0000000000000530        0x4 build/default/production/DIO.o
-                0x0000000000000530                checkPORTA
-
-.data.keys      0x0000000000800060        0xc load address 0x0000000000000534
- .data.keys     0x0000000000800060        0xc build/default/production/Keypad.o
-                0x0000000000800060                keys
+.data.numbers   0x0000000000800060        0xa load address 0x0000000000000108
+ .data.numbers  0x0000000000800060        0xa build/default/production/sevenSeg.o
+                0x0000000000800060                numbers
