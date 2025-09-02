@@ -14,6 +14,7 @@
 #include "led.h"
 #include "Keypad.h"
 #include "sevenSeg.h"
+#include "lcd4.h"
 
 
 
@@ -21,13 +22,19 @@
  * 
  */
 int main() {
-    init_7Seg();
-    while (1){
-        for(int i = 0;i<=9;i++){
-            _7seg_write(i);
-            _delay_ms(500);
-        }
-    }
+    
+    LCD4_init();
+    LCD4_data('H');
+    LCD4_data('A');
+    LCD4_data('B');
+    LCD4_data('I');
+    LCD4_data('B');
+    LCD4_data('A');
+    LCD4_data('2');
+    LCD4_data('5');
+    
+    
+    
 
     return (EXIT_SUCCESS); //ctrl to go to file
 }
