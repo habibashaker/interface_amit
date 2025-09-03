@@ -26,6 +26,7 @@
       <itemPath>Keypad.c</itemPath>
       <itemPath>sevenSeg.c</itemPath>
       <itemPath>lcd4.c</itemPath>
+      <itemPath>lcd8.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
