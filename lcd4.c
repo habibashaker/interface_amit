@@ -53,7 +53,7 @@ void LCD4_cmd(char cmd) {
 
 }
 
-void LCD4_data(char data) {
+void LCD4_char(char data){
     //RS --> 1
     setPINB(LCD4_RS_PIN,HIGH);
     
@@ -65,4 +65,18 @@ void LCD4_data(char data) {
     LCD4_DATA = (data << 4) | (LCD4_DATA & 0x0F);
     
     LCD4_enable();
+}
+
+void LCD4_str(char str[]){
+    for(int i=0;str[i]!='\0';i++){
+        LCD4_char(str[i]);
+    }
+    
+}
+
+void LCD4_num(int num){
+    char num_str[11];
+    sprintf(num_str,"%d",num);
+    LCD4_str(num_str);
+    
 }

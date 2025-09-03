@@ -17,7 +17,8 @@ build/default/production/mainApp.o.d build/default/production/mainApp.o: \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.32\avr\avr\include\math.h led.h \
- Keypad.h sevenSeg.h lcd4.h
+ Keypad.h sevenSeg.h lcd4.h \
+ c:\program\ files\microchip\xc8\v2.32\avr\avr\include\string.h
 
 c:\program\ files\microchip\xc8\v2.32\avr\avr\include\stdio.h:
 
@@ -62,3 +63,5 @@ Keypad.h:
 sevenSeg.h:
 
 lcd4.h:
+
+c:\program\ files\microchip\xc8\v2.32\avr\avr\include\string.h:

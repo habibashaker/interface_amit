@@ -10,6 +10,7 @@
       <itemPath>Keypad.h</itemPath>
       <itemPath>sevenSeg.h</itemPath>
       <itemPath>lcd4.h</itemPath>
+      <itemPath>lcd8.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

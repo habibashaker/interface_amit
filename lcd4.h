@@ -31,9 +31,15 @@
 
 #define LCD4_RETURN_HOME 0x02
 void LCD4_init();
+
 void LCD4_cmd(char cmd);
-void LCD4_data(char data);
+void LCD4_char(char data);
+void LCD4_num(int num);
+void LCD4_str(char str[]);
+//void LCD4_cmdS(char cmd);
+
 void LCD4_enable();
+
 
 
 

@@ -15,6 +15,7 @@
 #include "Keypad.h"
 #include "sevenSeg.h"
 #include "lcd4.h"
+#include <string.h>
 
 
 
@@ -24,16 +25,23 @@
 int main() {
     
     LCD4_init();
-    LCD4_data('H');
-    LCD4_data('A');
-    LCD4_data('B');
-    LCD4_data('I');
-    LCD4_data('B');
-    LCD4_data('A');
-    LCD4_data('2');
-    LCD4_data('5');
+    LCD4_char('H');
+    LCD4_char('A');
+    LCD4_char('B');
+    LCD4_char('I');
+    LCD4_char('B');
+    LCD4_char('A');
+    LCD4_char('2');
+    LCD4_char('5');
     
+    LCD4_char(' ');
+    LCD4_num(112);
     
+    LCD4_char(' ');
+    
+    char str[]="Hi";
+    //strncpy()
+    LCD4_str(str);
     
 
     return (EXIT_SUCCESS); //ctrl to go to file
